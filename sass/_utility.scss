@@ -1,0 +1,193 @@
+.container {
+    max-width: $website-width;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+%btn-common {
+    display: inline-block;
+    padding: 1rem 2.2rem;
+    transition: all .2s ease-in-out;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+
+.btn {
+    &-main {
+        @extend %btn-common;
+        color: $dark-color;
+        background-color: $main-color;
+    }
+
+    &-light {
+        @extend %btn-common;
+        color: $dark-color;
+        background-color: $light-color;
+    }
+
+    &-dark {
+        @extend %btn-common;
+        color: $light-color;
+        background-color: $dark-color;
+    }
+}
+
+button[class^="btn"]:hover,
+a[class^="btn"]:hover,
+input[class^="btn"]:hover {
+    background-color: $main-color;
+}
+
+.lead {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: normal;
+    margin: 1rem;
+    text-align: center;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 8rem;
+        height: .2rem;
+        background-color: $main-color;
+        margin: .8rem auto;
+    }
+
+}
+
+.p {
+    &-1 {
+        padding: 1rem;
+    }
+
+    &-2 {
+        padding: 2.5rem;
+    }
+
+    &-3 {
+        padding: 4rem;
+    }
+
+    &-4 {
+        padding: 6rem;
+    }
+
+    &y-1 {
+        padding: 1rem 0;
+    }
+
+    &y-2 {
+        padding: 2.5rem 0;
+    }
+
+    &y-3 {
+        padding: 4rem 0;
+    }
+
+    &y-4 {
+        padding: 6rem 0;
+    }
+
+    &x-1 {
+        padding: 0 1rem;
+    }
+
+    &x-2 {
+        padding: 0 2.5rem;
+    }
+
+    &x-3 {
+        padding: 0 4rem;
+    }
+
+    &x-4 {
+        padding: 0 6rem;
+    }
+}
+
+.m {
+    &-1 {
+        margin: 1rem;
+    }
+
+    &-2 {
+        margin: 2.5rem;
+    }
+
+    &-3 {
+        margin: 4rem;
+    }
+
+    &-4 {
+        margin: 6rem;
+    }
+
+    &y-1 {
+        margin: 1rem 0;
+    }
+
+    &y-2 {
+        margin: 2.5rem 0;
+    }
+
+    &y-3 {
+        margin: 4rem 0;
+    }
+
+    &y-4 {
+        margin: 6rem 0;
+    }
+
+    &x-1 {
+        margin: 0 1rem;
+    }
+
+    &x-2 {
+        margin: 0 2.5rem;
+    }
+
+    &x-3 {
+        margin: 0 4rem;
+    }
+
+    &x-4 {
+        margin: 0 6rem;
+    }
+}
+
+// Backgrouns
+.bg {
+    &-main {
+        background-color: $main-color;
+        color: set-color($main-color);
+    }
+
+    &-dark {
+        background-color: $dark-color;
+        color: set-color($dark-color);
+    }
+
+    &-light {
+        background-color: $light-color;
+        color: set-color($light-color);
+    }
+
+    &-medium {
+        background-color: $medium-color;
+        color: set-color($medium-color);
+    }
+}

@@ -1,0 +1,213 @@
+@media (max-width: 900px){
+    html{
+        font-size: 56.25%;
+    }
+    header {
+        &.header-home {
+            height: 80vh;
+            .header-content {
+                padding-top: 5rem;
+
+                h1{
+                    font-size: 3rem;
+                }
+                p{
+                    margin-top: 2rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+
+    header {
+        .header-content {    
+            h1 {
+              font-size: 3.8rem;
+            }
+            p{
+                margin-top: 1.5rem;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    
+
+    .home {
+        &-a {
+          .specials {
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+          }
+        }
+        &-c {
+            .process {
+              grid-template-columns: repeat(2, 1fr);
+            }
+        
+        }
+    }
+    .about {
+        &-a {
+          .about-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 5rem 2rem;
+      
+            img{
+              grid-column: 1/-1;
+            }
+            .bio {
+                margin-top: 2rem;
+                grid-column: 1/-1;
+                border-right: 3px solid $main-color;
+            }
+          }
+        }
+        &-d {
+            .testimonials {
+              grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }  
+    .items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+
+}
+
+
+@media (max-width: 550px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .header-inner {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          $bg-url no-repeat 20% 30%/cover;
+        height: 15rem;
+        border-bottom: 3px solid $main-color;
+      }
+
+    header {
+      
+        .main-nav {
+            display: block;
+
+            img {
+                display: block;
+                width: 50px;
+                margin: 0 auto;
+              }
+        }
+
+        .header-content {
+            width: 80%;
+            line-height: 1.4;
+            margin-top: 2rem;
+        
+            h1 {
+                font-size: 3rem;
+            }
+            p{
+                width: 80%;
+                margin: 2rem auto;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .home {
+        &-a {
+          .specials {
+            grid-template-columns: 1fr;
+            text-align: center;
+          }
+        }
+
+        &-b {
+            .stats {
+              grid-template-columns: 1fr;
+            }
+            }
+        &-c {
+            .process {
+              grid-template-columns: 1fr;
+            }
+        
+        }
+    }  
+    .about {
+        &-a {
+          .about-info {
+            display: block;
+
+            .award{
+                margin: 5rem 0 2rem;
+            }
+          }
+        }
+        &-d {
+            .testimonials {
+              grid-template-columns: 1fr;
+              width: 70%;
+              margin: 0 auto;
+
+              & > *::after{
+                  content: "";
+                  display: block;
+                  width: 50%;
+                  margin: .5rem auto 2rem;
+                  height: 1px;
+                  background-color: #ccc;
+              }
+            }
+        }
+    } 
+    .contact {
+
+        &-a {
+            form {
+              display: grid;
+              grid-template-columns: 1fr;
+            }
+        }
+        &-b {
+
+            .contact-info {
+              display: grid;
+              grid-template-columns: 1fr;
+
+              & > *:not(:last-child){
+                  margin-bottom: 2rem;
+              }
+            }
+        }
+    }
+    .main-footer {
+        padding: 2rem 0 .5rem;
+    
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            p{
+                order: 1;
+                margin-top: 2rem;
+            }
+            .social{
+                margin-top: 1rem;
+            }
+        }
+    } 
+
+    .items {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
